@@ -6,42 +6,6 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
-import { BsArrowDownRight } from "react-icons/bs";
-import Link from "next/link";
-
-import { motion } from "framer-motion";
-
-const services = [
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "Mobile Development",
-    description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "UI/UX",
-    description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
-    href: "",
-  },
-];
-
 const Home = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center">

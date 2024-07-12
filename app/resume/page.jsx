@@ -9,13 +9,20 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiFlutter,
+  SiDart,
+  SiFirebase,
+  SiSupabase,
+} from "react-icons/si";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+    "Experienced Software Developer with 6 years of expertise, possessing strong soft skills such as positive and well-organized attributes along with excellent written and verbal communication capabilities. I have demonstrated the ability to work autonomously, showing initiative in problem-solving, issue identification, and proposing effective solutions or consulting relevant resources.",
   info: [
     {
       fieldName: "Name",
@@ -27,7 +34,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
+      fieldValue: "6+ Years",
     },
     {
       fieldName: "Skype",
@@ -55,38 +62,38 @@ const about = {
 const experience = {
   icon: "",
   title: "My experience",
-  descrption:
-    "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+  description:
+    "Lists previous job positions, the companies I have worked for, the duration of each role, and my key responsibilities.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "ARM HoldCo",
+      position: "Frontend (Web) Developer",
+      duration: "Jul 2024 - Present",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Sterling Bank Plc",
+      position: "Frontend (Mobile) Developer",
+      duration: "Dec 2021 - Present",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Andela",
+      position: "Software Developer (Talent Network)",
+      duration: "Jan 2024 - Present",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Enki Connect",
+      position: "Frontend (Mobile) Developer",
+      duration: "Jul 2023 - Oct 2023",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Lekota Labs",
+      position: "Frontend (Mobile) Developer",
+      duration: "Mar 2023 - Jun 2023",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Semicolon",
+      position: "Software Developer",
+      duration: "Jan 2020 - Mar 2022",
     },
   ],
 };
@@ -94,46 +101,36 @@ const experience = {
 const education = {
   icon: "",
   title: "My education",
-  descrption:
-    "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+  description:
+    "Lists the academic institutions I have attended, the degrees or certifications earned, the duration of each program",
   items: [
     {
-      institution: "Semicolon Africa",
-      degree: "Software Engineering Bootcamp",
-      duration: "2024",
+      institution: "Miva Open University",
+      degree: "B.S. Computer Science",
+      duration: "May 2024 - May 2027",
     },
     {
-      institution: "Miva university",
-      degree: "Full Stack Developer",
-      duration: "2024",
+      institution: "Henley Business School",
+      degree: "Business Administration",
+      duration: "Jan 2020 - Jan 2021",
     },
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Developer",
-      duration: "2024",
+      institution: "LinkedIn",
+      degree: "Microservices: Design Patterns",
+      duration: "Issued Feb 2024",
     },
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Developer",
-      duration: "2024",
-    },
-    {
-      institution: "Online Course Platform",
-      degree: "Full Stack Developer",
-      duration: "2024",
-    },
-    {
-      institution: "Online Course Platform",
-      degree: "Full Stack Developer",
-      duration: "2024",
+      institution: "LinkedIn",
+      degree: "SQL: Data Reporting and Analysis",
+      duration: "Issued Feb 2024",
     },
   ],
 };
 
 const skills = {
   title: "My skills",
-  descrption:
-    "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+  description:
+    "Lists the abilities and expertise I have acquired. This section highlights my strengths and the value I can bring to potential employers.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -148,8 +145,16 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <SiDart />,
+      name: "dart",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "flutter",
     },
     {
       icon: <SiNextdotjs />,
@@ -158,6 +163,14 @@ const skills = {
     {
       icon: <SiTailwindcss />,
       name: "tailwind.css",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "firebase",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "supabase",
     },
     {
       icon: <FaNodeJs />,
@@ -203,19 +216,19 @@ const Resume = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Eduction</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about"> About me</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-2">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.descrption}
+                  {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-full">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -240,12 +253,12 @@ const Resume = () => {
             </TabsContent>
 
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-2">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.descrption}
+                  {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-full">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
@@ -271,10 +284,10 @@ const Resume = () => {
 
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left pt-2">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                    {skills.descrption}
+                    {skills.description}
                   </p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
@@ -304,7 +317,7 @@ const Resume = () => {
               value="about"
               className="w-full text-center xl:text-left"
             >
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-2">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}

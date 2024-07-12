@@ -22,10 +22,10 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "mobile",
+    title: "OneBank",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "OneBank is a 100% Digital Bank! In here, you can open an instant account, send and receive money, pay bills, buy airtime &amp; data, invest and get a loan all in one place.",
     stack: [
       {
         name: "Flutter",
@@ -37,17 +37,16 @@ const projects = [
         name: "Firebase",
       },
     ],
-    image: "/assets/photo.png",
+    image: "/assets/a43.png",
     live: "",
     github: "",
   },
-
   {
     num: "02",
-    category: "frontend",
-    title: "project 1",
+    category: "mobile",
+    title: "Switch by Sterling",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "Switch is swift and can open accounts in Naira, Dollars, pounds and Euro. You can even request for a virtual card without visiting a banking hall! Cheaper transfers are guaranteed too.",
     stack: [
       {
         name: "Flutter",
@@ -55,21 +54,35 @@ const projects = [
       {
         name: "Dart",
       },
-      {
-        name: "Firebase",
-      },
     ],
-    image: "/assets/photo.png",
+    image: "/assets/a44.png",
     live: "",
     github: "",
   },
-
+  // {
+  //   num: "03",
+  //   category: "mobile",
+  //   title: "Doubble",
+  //   description:
+  //     "Doubble allows you save and invest at your convenience with return of up to 60% over a period. You can save or invest in Naira and USD.",
+  //   stack: [
+  //     {
+  //       name: "Flutter",
+  //     },
+  //     {
+  //       name: "Dart",
+  //     },
+  //   ],
+  //   image: "/assets/a46.png",
+  //   live: "",
+  //   github: "",
+  // },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
+    category: "mobile",
+    title: "BitBust",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "Bitbust is designed to bridge the gap between cryptocurrency, gift cards, and local fiat currencies. It empowers individuals to exchange, transfer, and manage their funds.",
     stack: [
       {
         name: "Flutter",
@@ -77,21 +90,17 @@ const projects = [
       {
         name: "Dart",
       },
-      {
-        name: "Firebase",
-      },
     ],
-    image: "/assets/photo.png",
+    image: "/assets/a41.png",
     live: "",
     github: "",
   },
-
   {
     num: "04",
-    category: "frontend",
-    title: "project 1",
+    category: "mobile",
+    title: "EasySpend",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "EasySpend helps you streamline your online shopping experience by generating virtual cards for secure transactions. Say goodbye to worries about fraudulent activities charges.",
     stack: [
       {
         name: "Flutter",
@@ -99,11 +108,26 @@ const projects = [
       {
         name: "Dart",
       },
+    ],
+    image: "/assets/a42.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "mobile",
+    title: "The Alternative Bank",
+    description:
+      "A whole new experience to the Interest free banking space. AltBank was built with features and benefits that empower users to grow wealth right from their banking app.",
+    stack: [
       {
-        name: "Firebase",
+        name: "Flutter",
+      },
+      {
+        name: "Dart",
       },
     ],
-    image: "/assets/photo.png",
+    image: "/assets/a45.png",
     live: "",
     github: "",
   },
@@ -137,8 +161,10 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
+              {/* <p className="text-xl"> {project.category} project</p> */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
+                {/* - {project.category} project */}
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
