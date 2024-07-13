@@ -17,21 +17,21 @@ const services = [
     num: "02",
     title: "Mobile Development",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "I offer professional mobile development services, creating responsive and user-friendly websites to meet your business needs.",
     href: "",
   },
   {
     num: "03",
     title: "UI/UX",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "I offer professional ui/ux design services, creating responsive and user-friendly websites to meet your business needs.",
     href: "",
   },
   {
     num: "04",
     title: "SEO",
     description:
-      "I offer professional web development services, creating responsive and user-friendly websites to meet your business needs.",
+      "I offer professional search engine optimization services, creating responsive and user-friendly websites to meet your business needs.",
     href: "",
   },
 ];

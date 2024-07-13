@@ -105,9 +105,9 @@ const education = {
     "Lists the academic institutions I have attended, the degrees or certifications earned, the duration of each program",
   items: [
     {
-      institution: "Miva Open University",
+      institution: "University of the People",
       degree: "B.S. Computer Science",
-      duration: "May 2024 - May 2027",
+      duration: "2021 - 2025",
     },
     {
       institution: "Henley Business School",
